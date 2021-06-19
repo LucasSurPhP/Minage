@@ -24,7 +24,7 @@ class Main extends PluginBase implements Listener
 
     }
 
-    public function onCommand(CommandSender $sender, Command $command, string $label, array $args)
+    public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
     {
         if ($command->getName() === "minage") {
             if ($sender instanceof Player) {
