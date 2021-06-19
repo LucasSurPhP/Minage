@@ -16,9 +16,12 @@ class Main extends PluginBase implements Listener
 
     public function onEnable()
     {
+        $this->saveDefaultConfig();
+        $this->saveResource("config.yml");
+
         $this->getServer()->getLogger()->info("§aPlugin Minage on");
-        $this->getServer()->getLogger()->info("§l§aCheck the Config ! ");
-        $this->getserver()->getPluginManage()->registerEvents($this, this);
+        $this->getServer()->getLogger()->info("§l§aCheck the Config !");
+        $this->getserver()->getPluginManager()->registerEvents($this,$this);
 
         Server::getInstance()->loadLevel("Minage");
 
@@ -33,9 +36,12 @@ class Main extends PluginBase implements Listener
 
                 $sender->teleport($level->getSafeSpawn());
 
-                $sender->sendMessage("successfull_tp");
+                $sender->sendMessage($this->getConfig()->get("successfull_tp"));
             }
         }
         return true;
     }
 }
+
+
+#
