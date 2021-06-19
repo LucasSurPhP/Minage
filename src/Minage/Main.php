@@ -3,6 +3,8 @@
 namespace Minage;
 
 use pocketmine\event\Listener;
+use pocketmine\{Server, Player};
+use pocketmine\command\{Command, CommandSender};
 use pocketmine\math\Vector3;
 use pocketmine\level\Position;
 use pocketmine\plugin\PluginBase;
