@@ -1,3 +1,4 @@
 # Minage
 
-testt
+A plugin for pmmp server
+

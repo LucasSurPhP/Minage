@@ -1,0 +1,8 @@
+name: Minage
+main: Minage\Main
+version: 1.0.0
+api: 3.0.0
+
+commands:
+  minage:
+    description: Go to the Mining world
