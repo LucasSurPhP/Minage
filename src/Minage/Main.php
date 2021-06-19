@@ -29,7 +29,8 @@ class Main extends PluginBase implements Listener
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
     {
-        parent::__construct("minage", $this->plugin->config->get("minageCommandDescription"), "/minage"); {
+        if ($command->getName() === "minage") {
+
             if ($sender instanceof Player) {
 
                 $level = Server::getInstance()->getLevelByName("Minage");
