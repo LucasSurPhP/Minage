@@ -1,5 +1,2 @@
-# Minage
 
-A plugin for pmmp server
-
-##test
+A plugin that allows you to teleport to Mining with a simple Command!
