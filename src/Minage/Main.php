@@ -18,9 +18,7 @@ class Main extends PluginBase implements Listener
     {
         $this->saveDefaultConfig();
         $this->saveResource("config.yml");
-
-        $this->getServer()->getLogger()->info("§aPlugin Minage on");
-        $this->getServer()->getLogger()->info("§l§aCheck the Config !");
+        
         $this->getserver()->getPluginManager()->registerEvents($this,$this);
 
         Server::getInstance()->loadLevel("Minage");
